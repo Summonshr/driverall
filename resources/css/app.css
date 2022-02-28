@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Inter', Courier, monospace;
+}
+
+[x-cloak] { display: none; }
+
+h2 {
+    @apply text-focused leading-normal  font-bold text-4xl;
+}
+
+h3 {
+    @apply text-focused leading-loose  font-bold text-3xl;
+}
+
+h4 {
+    @apply text-focused leading-loose  font-semibold text-xl;
+}
+
+h5 {
+    @apply font-semibold leading-loose  text-light;
+}
+
+h6 {
+    @apply font-semibold leading-loose  text-light;
+}
+
+.flex-normal {
+    @apply flex items-center mx-auto w-full justify-between;
+}
+
+header a {
+    @apply text-lg text-focused;
+}
+
+a {
+    @apply text-sm text-focused;
+}
+
+input {
+    @apply flex-grow p-2 text-gray-700 outline-none;
+}
+
+
+button.theme {
+    @apply bg-theme text-lightest p-2 rounded-full px-4 hover:bg-lighter hover:border hover:border-theme hover:text-theme;
+}
+
+p {
+    @apply text-light leading-normal;
+}
+
+section {
+    @apply py-4;
+}
+
+section > div{
+    @apply max-w-6xl mx-auto px-8;
+}
+
+.thumb {
+    @apply bg-lightest text-focused px-8 py-4 rounded-lg w-full hover:bg-theme scale-100 hover:z-50 hover:scale-110 hover:text-background hover:shadow-xl cursor-pointer transition transition-all;
+}
+
+
+.thumb.active {
+    @apply bg-theme text-background px-8 py-4 rounded-lg;
+}
+
+.bg-theme {
+    @apply text-lighter;
+}
+
+.bg-theme h5{
+    @apply text-lightest;
+}
+
+.bg-theme a{
+    @apply text-lighter;
+}
