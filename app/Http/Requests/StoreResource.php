@@ -36,11 +36,6 @@ class StoreResource extends FormRequest
     public function setOfRules()
     {
         return [
-            'office' => [],
-            'hotel'=> [],
-            'trip' => [
-                'office_id'   => 'required|exists:offices,id,user_id,' . $this->user()->id
-            ]
         ];
     }
 }

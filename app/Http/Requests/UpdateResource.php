@@ -34,8 +34,6 @@ class UpdateResource extends FormRequest
     public function setOfRules()
     {
         return [
-            'office' => [],
-            'trip' => []
         ];
     }
 }
